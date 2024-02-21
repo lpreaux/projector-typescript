@@ -1,4 +1,4 @@
-import path from "path";
+import * as path from "path";
 import {Opts} from "./opt";
 
 export enum Operation {
@@ -33,22 +33,22 @@ function getConfig(opts: Opts): string {
     }
     
     if (ConfigDir === homeDir) {
-        return path.join(xdgConfigDir, ".projector.json");
+        return path.join(ConfigDir, ".projector.json");
     }
     
     return path.join(ConfigDir, "projector", "config.json");
 }
 
 function getOperation(opts: Opts): Operation {
-    if (!opts.args | opts.args.length === 0) {
-        return [];
+    if (!opts.args || opts.args.length === 0) {
+        return Operation.Print;
     }
 
-    if (opts[0] === "add") {
+    if (opts.args[0] === "add") {
         return Operation.Add;
     }
 
-    if (opts[0] === "remove") {
+    if (opts.args[0] === "remove") {
         return Operation.Remove;
     }
 
@@ -56,13 +56,13 @@ function getOperation(opts: Opts): Operation {
 }
 
 function getArgs(opts: Opts): string[] {
-    if (!opts.args | opts.args.length === 0) {
+    if (!opts.args || opts.args.length === 0) {
         return [];
     }
     
     const operation = getOperation(opts);
-    if (operaiton === Operation.Print) {
-        if (opt.args.length > 1) {
+    if (operation === Operation.Print) {
+        if (opts.args.length > 1) {
             throw new Error(`expected 0 or 1 arguments but got ${opts.args.length -1}`);
         }
         return opts.args;
@@ -70,13 +70,13 @@ function getArgs(opts: Opts): string[] {
     
     if (operation === Operation.Add) {
         if (opts.args.length !== 3) {
-            throw new Error(`expected 2 arguments but got ${opts.args.lenght - 1}`);
+            throw new Error(`expected 2 arguments but got ${opts.args.length - 1}`);
         }
         return opts.args.slice(1);
     }
     
     if (opts.args.length !== 2) {
-        throw new Error(`expected 1 arguments but got ${opts.args.lenght - 1}`);
+        throw new Error(`expected 1 arguments but got ${opts.args.length - 1}`);
     }
     return opts.args.slice(1);
 }
