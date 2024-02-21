@@ -1,11 +1,20 @@
 {
   "name": "projector-typescript",
-  "packageManager": "yarn@4.1.0",
-  "dependencies": {
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
     "@types/command-line-args": "^5.2.3",
     "@types/node": "^20.11.19",
-    "command-line-args": "^5.2.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "command-line-args": "^5.2.1"
   }
 }
