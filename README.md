@@ -27,6 +27,7 @@ A simple CLI application that stores, deletes, or presents variables based on th
 
 Breaking the problem up
 
+```
    +----------+    +----------+      +----------+    +----------+
    | cli opts | -> | project  | -+-> |  print   | -> | display  |
    +----------+    |  config  |  |   +----------+    +----------+
@@ -38,7 +39,7 @@ Breaking the problem up
                                  |   +----------+    +----------+
                                  +-> |    rm    | -> |   save   |
                                      +----------+    +----------+
-
+```
 
 
 ## Links
