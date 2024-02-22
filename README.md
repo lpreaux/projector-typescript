@@ -44,7 +44,7 @@ Breaking the problem up
 
 ## Links
 
-[Frontend Masters](https://frontendmasters.com/)
-[Le cours *Polyglot Programming - TS, Go, and Rust*](https://frontendmasters.com/courses/typescript-go-rust/) par ThePrimeagen
-[ThePrimeagen sur Frontend Masters](https://frontendmasters.com/teachers/the-primeagen/)
-[Le profil GitHub de ThePrimeagen (avec c'est autres liens)](https://github.com/ThePrimeagen)
+[Frontend Masters](https://frontendmasters.com/)  
+[Le cours *Polyglot Programming - TS, Go, and Rust*](https://frontendmasters.com/courses/typescript-go-rust/) par ThePrimeagen  
+[ThePrimeagen sur Frontend Masters](https://frontendmasters.com/teachers/the-primeagen/)  
+[Le profil GitHub de ThePrimeagen (avec c'est autres liens)](https://github.com/ThePrimeagen)  
