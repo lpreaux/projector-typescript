@@ -63,7 +63,7 @@ function getArgs(opts: Opts): string[] {
     const operation = getOperation(opts);
     if (operation === Operation.Print) {
         if (opts.args.length > 1) {
-            throw new Error(`expected 0 or 1 arguments but got ${opts.args.length -1}`);
+            throw new Error(`expected 0 or 1 arguments but got ${opts.args.length - 1}`);
         }
         return opts.args;
     }

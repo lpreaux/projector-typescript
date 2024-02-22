@@ -75,17 +75,23 @@ export default class Projector {
         }
     }
     
+    save() {
+        const configPath = path.dirname(this.config.config);
+        if (!fs.existsSync(configPath)) {
+            fs.mkdirSync(configPath, { recursive: true });
+        }
+        console.log(this.data)
+        fs.writeFileSync(this.config.config, JSON.stringify(this.data));
+    }
+
     static fromConfig(config: Config): Projector {
+        let data: Data = defaultData;
         if(fs.existsSync(config.config)) {
-            let data: Data = undefined;
             try {
                 data = JSON.parse(fs.readFileSync(config.config).toString());
-            } catch (e) {
-                data = defaultData;
-            }
-            return new Projector(config, data);
+            } catch (e) {}
         }
-        
-        return new Projector(config, defaultData);
+
+        return new Projector(config, data);
     }
 }
