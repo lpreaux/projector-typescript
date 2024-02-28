@@ -48,3 +48,8 @@ Breaking the problem up
 [Le cours *Polyglot Programming - TS, Go, and Rust*](https://frontendmasters.com/courses/typescript-go-rust/) par ThePrimeagen  
 [ThePrimeagen sur Frontend Masters](https://frontendmasters.com/teachers/the-primeagen/)  
 [Le profil GitHub de ThePrimeagen (avec c'est autres liens)](https://github.com/ThePrimeagen)  
+
+
+## Remerciement
+
+Thanks to @ThePrimeagen for the amazing course.
