@@ -1,13 +1,13 @@
-# Projector - TypeScript - TP
+# Projector — TypeScript
 
-Ce dépot fait partie des solutions d'un exercice venant du cours *Polyglot Programming - TS, Go, and Rust* de @ThePrimeagen sur le site FrontendMasters.
+Implémentation TypeScript d'un exercice tiré du cours *Polyglot Programming — TypeScript, Go, and Rust* de ThePrimeagen sur Frontend Masters.
 
 Vous pouvez trouvez la version GoLang [ici](https://github.com/lpreaux/projector-go).  
 Et la version Rust [ici](https://github.com/lpreaux/projector-rust).
 
 ## Objectifs de l'exercice
 
-Programmer une application de type CLI dans 3 languages de programmations différents : TypeScript, GoLang et Rust ; afin de découvrir GoLang et Rust.
+Programmer la même application CLI dans trois langages — TypeScript, Go et Rust — afin de comparer leurs approches.
 
 **Les objectifs pédagogiques étaient :**
 
@@ -50,6 +50,6 @@ Breaking the problem up
 [Le profil GitHub de ThePrimeagen (avec c'est autres liens)](https://github.com/ThePrimeagen)  
 
 
-## Remerciement
+## Remerciements
 
 Thanks to @ThePrimeagen for the amazing course.
